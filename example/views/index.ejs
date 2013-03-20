@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <form method="POST" action="/">
+      <div class="control-group <%=: form.familyName.valid | state %>">
+        <label for="familyName"><%= form.familyName.label %></label>
+        <input type="text" name="familyName" id="familyName" value="<%= form.familyName.input %>">
+        <span class="help-block"><%= form.familyName.error %></span>
+      </div>
+      <div class="control-group <%=: form.age.valid | state %>">
+        <label for="age"><%= form.age.label %></label>
+        <input type="text" name="age" id="age" value="<%=: form.age.input %>">
+        <span class="help-block"><%= form.age.error %></span>
+      </div>
+      <div class="control-group <%=: form.birthDate.valid | state %>">
+        <label for="birthDate"><%= form.birthDate.label %></label>
+        <input placeholder="JJ/MM/AAAA" type="text" name="birthDate" id="birthDate" value="<%= form.birthDate.input %>">
+        <span class="help-block"><%= form.birthDate.error %></span>
+      </div>
+      <div class="control-group <%=: form.available.valid | state %>">
+        <label>
+          <input type="checkbox" name="available" id="available" ><%= form.available.label %>
+        </label>
+        <span class="help-block"><%= form.available.error %></span>
+      </div>
+       <input type="submit">
+    </form>
+  </body>
+</html>

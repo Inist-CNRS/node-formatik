@@ -1,0 +1,68 @@
+{
+  "available" : {
+    "type": "boolean",
+    "required": false,
+    "label": [
+      {
+        "lang": "fr",
+        "$t": "Disponible"
+      }
+    ]
+  },
+  "familyName" : {
+    "type": "text",
+    "required": true,
+    "label": {
+      "lang": "fr",
+      "$t": "Nom"
+    },
+    "error": [
+      {
+        "lang": "fr",
+        "$t": "Le nom est obligatoire",
+        "for": "required"
+      },
+      {
+        "lang": "fr",
+        "$t": "Saisie incorrecte",
+        "for": "type"
+      }
+    ]
+  },
+  "age" : {
+    "type": "number",
+    "required": false,
+    "label": {
+      "lang": "fr",
+      "$t": "Age"
+    },
+    "error": [
+      {
+        "lang": "fr",
+        "$t": "Age obligatoire",
+        "for": "required"
+      },
+      {
+        "lang": "fr",
+        "$t": "Saisie incorrecte",
+        "for": "type"
+      }
+    ]
+  },
+  "birthDate" : {
+    "type": "date",
+    "pattern": "DD/MM/YYYY",
+    "required": false,
+    "label": {
+      "lang": "fr",
+      "$t": "Date de naissance"
+    },
+    "error": [
+      {
+        "lang": "fr",
+        "$t": "La date doit être au format DD/MM/YYYY",
+        "for": "type"
+      }
+    ]
+  }
+}
