@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/eivindfjeldstad/dateable.png)](http://travis-ci.org/eivindfjeldstad/dateable)
 # dateable
 A small library that provides a few very useful methods for displaying dates, including a formatter and a parser.
 
