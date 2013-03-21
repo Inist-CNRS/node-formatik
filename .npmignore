@@ -1,3 +1,4 @@
 .git*
+example
 node_modules/mocha
 node_modules/should
