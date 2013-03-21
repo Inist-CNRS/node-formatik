@@ -80,7 +80,6 @@ describe('CSV', function () {
         );
       }
     );
-    /*
     describe('#5 date should be date', function () {
         var data, schema, form;
         it('should', function() {

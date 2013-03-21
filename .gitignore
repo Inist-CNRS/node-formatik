@@ -15,5 +15,7 @@ logs
 results
 
 npm-debug.log
-node_modules
+node_modules/.bin
+node_modules/mocha
+node_modules/should
 example/node_modules/
