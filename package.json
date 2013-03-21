@@ -5,7 +5,7 @@
   "contributors": [
   ],
   "description": "To validate associative arrays",
-  "tags": [
+  "keywords": [
     "form",
     "schema",
     "validator",
