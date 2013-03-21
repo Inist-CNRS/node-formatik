@@ -13,7 +13,7 @@ there some particulars features :
 * The result of the validation tries to be the most practical : 
   * all declared variables exists
   * original value & cast value are side by side
-  * extremely easy to use in a template
+  * extremely easy to use in a template [see by yourself](./example/views/index.ejs)
 
 
 ## Contributors
@@ -53,10 +53,12 @@ see the [example directory for a complete example with expressjs](./example).
 
 ### parse(Object data, Object schema, String language)
 **Return Output Object.**
+
 Parse and validate ''data'' with ''schema''. Labels and Messages are choosed with ''language''.
 
 ### create(Object schema, String language)
 **Return Output Object.**
+
 Create on empty Output Object with ''schema''. Labels are choosed with ''language''.
 
 
@@ -122,7 +124,7 @@ To set the variable with default value.
 
 ### maxlength
 
-//Not yet implemeted. Contribs are welcome//
+__Not yet implemeted. Contribs are welcome__
 
 ### label
 
@@ -160,12 +162,13 @@ the label of the variable (depending of the selected language)
 
 ### mset(String name, Object value)
 **Return None.**
-Set one field of all the variable with the same value. Exemple : form.mset('valid', null) 
+
+Set one field of all the variable with the same value. Example : form.mset('valid', null) 
 
 ### mget(String name)
 **Return Object.**
-Get an new object with all the variable with only the value of one field.
-Exemple : form.mget('value')
+
+Get an new object with all the variable with only the value of one field. Example : form.mget('value')
 
 ## Example
 ```json
