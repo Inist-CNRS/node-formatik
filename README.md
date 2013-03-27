@@ -19,6 +19,7 @@ there some particulars features :
 ## Contributors
 
   * [Nicolas Thouvenin](https://github.com/touv) 
+  * [Adrien Siebert](https://github.com/Amatsuyu)
 
 # Installation
 
