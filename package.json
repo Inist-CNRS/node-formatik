@@ -1,8 +1,12 @@
 {
   "name": "formatik",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Nicolas Thouvenin <nthouvenin@gmail.com>",
   "contributors": [
+    {
+      "name": "Adrien Siebert",
+      "url": "https://github.com/Amatsuyu"
+    }
   ],
   "description": "To validate associative arrays",
   "keywords": [
