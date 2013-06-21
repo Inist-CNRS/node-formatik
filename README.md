@@ -71,28 +71,16 @@ Create on empty Output Object with ''schema''. Labels are choosed with ''languag
    "familyName" : {
       "type" : "text", 
       "required" : true,
-      "label" : [
-         {
-            "lang" : "fr",
-            "$t" : "Nom de famille"
-         },
-         {
-            "lang" : "en",
-            "$t" : "Family Name"
-         }
-      ],
-      "error" : [
-         {
-            "lang" : "fr",
-            "for" : "required",
-            "$t" : "Le nom de famille est obligatoire"
-         },
-	 	 {
-            "lang" : "en",
-            "for" : "required",
-            "$t" : "familly Name are required"
-         }
-	  ]
+	  "label" : {
+		  "fr" : "Nom de famille",
+		  "en" : "Family Name"
+	  },
+      "error" : {
+         "required" : {
+            "fr" : "Le nom de famille est obligatoire",
+			"en" : "familly Name are required"
+		 }
+	  } 
    }
 }
 ```
@@ -129,11 +117,18 @@ __Not yet implemeted. Contribs are welcome__
 
 ### label
 
-The label of the variable. Values are an array of object like this : { 'lang' : 'XX', '$t' : 'The label' }
+The label of the variable. Values can be multiform :
+- array of object like this : ``{ 'lang' : 'XX', '$t' : 'The label' }``
+- object like this : ``{ 'en' : 'Hello', 'fr' : 'Bonjour' }``
+- string 
 
 ### error
 
-The list of errors messages depending of the control. Values are an array of object like this : { 'lang' : 'XX', '$t' : 'The error message', 'for' : type|required|pattern|maxlength }
+The list of errors messages depending or not of the control test. Values can be multiform :
+- array of object like this : ``{ 'lang' : 'XX', '$t' : 'The error message', 'for' : type|required|pattern|maxlength }``
+- object like this : ``{ 'en' : 'Hello', 'fr' : 'Bonjour' }``
+- object like this : ``{ type|required|pattern|maxlength : { 'en' : 'Hello', 'fr' : 'Bonjour' }}``
+- string
 
 ### values
 

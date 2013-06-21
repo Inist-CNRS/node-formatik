@@ -2,67 +2,49 @@
   "available" : {
     "type": "boolean",
     "required": false,
-    "label": [
-      {
-        "lang": "fr",
-        "$t": "Disponible"
-      }
-    ]
+    "label": {
+      "fr" : "Disponible"
+    }
   },
   "familyName" : {
     "type": "text",
     "required": true,
     "label": {
-      "lang": "fr",
-      "$t": "Nom"
+      "en": "Nom"
     },
-    "error": [
-      {
-        "lang": "fr",
-        "$t": "Le nom est obligatoire",
-        "for": "required"
+    "error": {
+      "required" : {
+        "fr": "Le nom est obligatoire"
       },
-      {
-        "lang": "fr",
-        "$t": "Saisie incorrecte",
-        "for": "type"
+      "type" : {
+        "en": "Saisie incorrecte"
       }
-    ]
+    }
   },
   "age" : {
     "type": "number",
-    "required": false,
+    "required": true,
     "label": {
-      "lang": "fr",
-      "$t": "Age"
+      "fr": "Age"
     },
-    "error": [
-      {
-        "lang": "fr",
-        "$t": "Age obligatoire",
-        "for": "required"
+    "error": {
+      "required" : {
+        "fr": "Age obligatoire"
       },
-      {
-        "lang": "fr",
-        "$t": "Saisie incorrecte",
-        "for": "type"
+      "type" : {
+        "fr": "Saisie incorrecte"
       }
-    ]
+    } 
   },
   "birthDate" : {
     "type": "date",
     "pattern": "DD/MM/YYYY",
     "required": false,
     "label": {
-      "lang": "fr",
-      "$t": "Date de naissance"
+      "fr": "Date de naissance"
     },
-    "error": [
-      {
-        "lang": "fr",
-        "$t": "La date doit être au format DD/MM/YYYY",
-        "for": "type"
-      }
-    ]
+    "error": {
+      "fr": "La date doit être au format DD/MM/YYYY"
+    }
   }
 }
