@@ -217,3 +217,7 @@ Get an new object with all the variable with only the value of one field. Exampl
 
 [MIT/X11](./LICENSE)
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/touv/node-formatik/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
