@@ -91,6 +91,30 @@ describe('CSV', function () {
         );
       }
     );
+    describe('#6 string should be email', function () {
+        var data, schema, form;
+        it('should', function() {
+            data = { x: 'toto@toto.to' };
+            schema = { x: {type: "string", pattern: "(\\w[-._\\w]*\\w@\\w[-._\\w]*\\w\\.\\w{2,3})"}};
+            form = formatik.parse(data, schema, 'fr');
+            form.x.valid.should.be.true;
+          }
+        );
+      }
+    );
+    describe('#6bis string should be email', function () {
+        var data, schema, form;
+        it('should', function() {
+            data = { x: 'toto@toto' };
+            schema = { x: {type: "string", pattern: "(\\w[-._\\w]*\\w@\\w[-._\\w]*\\w\\.\\w{2,3})"}};
+            form = formatik.parse(data, schema, 'fr');
+            form.x.valid.should.be.false;
+          }
+        );
+      }
+    );
+
+
 
 
 
